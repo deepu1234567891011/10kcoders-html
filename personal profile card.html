@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-card {
+            width: 560px;
+            min-height: 780px;
+            background-color: white;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Top background */
+        .top-section {
+            height: 210px;
+            background: linear-gradient(135deg, #5b6ee1, #b04ee8);
+            position: relative;
+        }
+
+        /* Profile image */
+        .profile-card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid white;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            padding: 70px 55px 30px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #20243a;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #673ab7;
+            margin-bottom: 18px;
+        }
+
+        .line {
+            width: 70px;
+            height: 3px;
+            background-color: #a64ce8;
+            margin: 0 auto 20px;
+        }
+
+        .description {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .details {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 18px 0;
+            font-size: 17px;
+            color: #333;
+        }
+
+        .icon {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0e7ff;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .skills-title {
+            color: #673ab7;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skills button {
+            padding: 9px 15px;
+            border: none;
+            background-color: #f0e7ff;
+            color: #673ab7;
+            border-radius: 20px;
+            font-size: 15px;
+        }
+
+        .social {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 25px;
+            color: #673ab7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <div class="top-section"></div>
+
+        <img src="IMG.PNG" alt="profile pic">
+
+        <div class="content">
+
+            <h1>Srideepika V.</h1>
+
+            <h2>Web Developer</h2>
+
+            <div class="line"></div>
+
+            <p class="description">
+                Passionate about building beautiful and user-friendly websites.
+                Love to learn new technologies and solve problems.
+            </p>
+
+            <hr>
+
+            <div class="details">
+
+                <div class="detail">
+                    <div class="icon">📅</div>
+                    <span>22 Years Old</span>
+                </div>
+
+                <div class="detail">
+                    <div class="icon">✉️</div>
+                    <span>deepikavicharapu@gmail.com</span>
+                </div>
+
+                <div class="detail">
+                    <div class="icon">📞</div>
+                    <span>9347420067</span>
+                </div>
+
+                <div class="detail">
+                    <div class="icon">📍</div>
+                    <span>Hyderabad, India</span>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2 class="skills-title">Skills</h2>
+
+            <div class="skills">
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JavaScript</button>
+                <button>Python</button>
+                <button>SQL</button>
+            </div>
+
+            <div class="social">
+                <span>🐙</span>
+                <span>in</span>
+                <span>◎</span>
+                <span>✉</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

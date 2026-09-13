@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 400px;
+            height: 600px;
+            background: linear-gradient(to bottom,#1976d2, #e3f2fd);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px gray;
+            padding:25px;
+            text-align: center;
+        }
+        .weather-details{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:15px;
+        }
+        button{
+            padding: 9px 20px;
+            background-color: #f0e7ff;
+            color: #673ab7;
+            border-radius: 30px;
+            font-size: 15px;
+
+        }
+        .weather-image{
+            width:150px;
+            height:150px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .temperature{
+            font-size: 50px;
+            font-weight: bold;
+            margin:10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="location">
+            <div class="icon">📍</div>
+            <span>Hyderabad, India</span><br>
+            <span>Monday,29 July 2024</span>
+        </div>
+        <img class="weather-image" src="images.png.png" alt="weather image" height="100px" width="80px">
+        <h1 class="temperature">32 C</h1>
+        <h2>Party cloudy</h2><hr>
+        <div class="weather-details">
+            <div> 🔥 Feels Like<br><span>32c</span></div>
+            <div> 💧Humidity<br><span>60%</span></div>
+            <div> ⛈Wind<br><span>12km/h</span></div>
+            <div> 👁visibility<br><span>10 km</span></div>
+            <div> 🌆Sunrise<br><span>5:58 AM</span></div>
+            <div> 🌅Sunset<br><span>6:45pm</span></div><hr>
+        </div>
+        <button>update weather</button>
+
+
+    </div>
+</body>
+</html>
